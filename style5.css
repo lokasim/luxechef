@@ -1,0 +1,672 @@
+.card-header {
+    font-weight: 500;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 400px;
+    background-color: black !important;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding-top: 56px;
+  }
+
+.heading {
+    color: gold;
+}
+
+.paragraph {
+    color: #007bff;
+    color: rgb(242 226 161);
+}
+
+.centered-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 580px;
+}
+
+.content {
+    text-align: center;
+
+}
+
+.content.main {
+    /* height: 100vh; */
+    max-width: 80%;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.logo {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    flex: 0 0 auto;
+    padding: 20px;
+    margin-top: -20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: gold;
+}
+
+.paragraph {
+    margin-bottom: 20px;
+}
+
+
+#logoContainer {
+    flex: 1;
+    width: 350px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topDiv,
+#bottomDiv {
+    width: 100%;
+    height: 50%;
+    background-color: gold;
+    color: black;
+    overflow: hidden;
+}
+
+#topDiv {
+    top: 0;
+    transform: skew(-22deg);
+}
+
+#bottomDiv {
+    bottom: 0;
+    transform: skew(-22deg);
+}
+
+#innerContent {
+    transform: skew(22deg);
+    padding: 5px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.caption {
+    color: gold;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.containerLocation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    padding: 0px;
+    margin: 20px;
+    height: 100%;
+    /* width: 400px; */
+}
+
+.box img {
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+.title {
+    text-align: center;
+    font-weight: 20px;
+    font-size: 30px;
+    color: #ffc107;
+}
+
+.containerLocationList {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.thunder-list {
+    list-style-type: none;
+    width: 100%;
+}
+
+.kitchen-item {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.kitchen-item::before {
+    content: "\1F52A";
+    margin-right: 5px;
+    color: #FFD700;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    width: calc(33% - 20px);
+    border-radius: 5px;
+    border: 2px solid gold;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 215, 0, 0.15); /* poluprovidni zlatni overlay */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-card:hover .gallery-img {
+    transform: scale(1.1); /* lagano zumiranje */
+}
+
+.gallery-card:hover .overlay {
+    opacity: 1; /* overlay se pojavljuje */
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .custom-container {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .custom-card {
+        margin: 10px;
+        width: calc(33.33% - 20px);
+        border-width: 2px !important;
+        border-color: gold !important;
+        border-radius: 0% !important;
+    }
+
+    .content.main {
+        margin-top: -10vh;
+    }
+
+    .text {
+        margin-top: 5vh;
+    }
+
+    .card-header.gold {
+        background-color: gold;
+        font-weight: bold;
+        color: black;
+        border-radius: 0%;
+    }
+
+    .card-body.gold {
+        color: gold;
+        background-color: black;
+        border-radius: 0%;
+    }
+
+    .custom-bullet {
+        list-style: none;
+        padding-left: 0;
+        color: #f0f0f0;
+    }
+
+    .contact-section {
+        margin-top: 50px;
+        color: white;
+    }
+
+    .custom-row {
+        width: calc(33.33% - 5px) !important;
+        border-width: 2px !important;
+        border-color: gold !important;
+        border-radius: 0% !important;
+    }
+
+    .contact-info {
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+    }
+
+    .contact-info-column.border {
+        border-color: gold !important;
+        border-width: 3px !important;
+    }
+
+    .contact-info-column:hover {
+        background-color: gold;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 744px) and (max-width: 1199px) {
+
+    .custom-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .custom-card {
+        margin: 10px;
+        width: calc(50% - 20px);
+        border-width: 2px !important;
+        border-color: gold !important;
+        border-radius: 0% !important;
+    }
+
+
+    .card-header.gold {
+        background-color: gold;
+        font-weight: bold;
+        color: black;
+        border-radius: 0%;
+    }
+
+    .card-body.gold {
+        color: gold;
+        background-color: black;
+        border-radius: 0%;
+    }
+
+    .custom-bullet {
+        list-style: none;
+        padding-left: 0;
+        color: #f0f0f0;
+    }
+
+    .contact-section {
+        margin-top: 50px;
+        color: white;
+    }
+
+    .custom-row {
+        width: calc(50% - 20px) !important;
+        border-width: 2px !important;
+        border-color: gold !important;
+        border-radius: 0% !important;
+    }
+
+    .contact-info {
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+    }
+
+    .contact-info-column.border {
+        border-color: gold !important;
+        border-width: 3px !important;
+    }
+
+    .contact-info-column:hover {
+        background-color: gold;
+        color: black;
+    }
+
+    .content.main {
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
+        margin-top: 10vh;
+    }
+
+    div.logo {
+        height: 50vh;
+        padding: 0px;
+        max-width: 100vw;
+        margin: 0px;
+        margin-top: -20vh;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo img {
+        max-height: 300px;
+        max-width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .containerLocationList {
+        width: 95%;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .box img {
+        width: 90%;
+        height: auto;
+    }
+
+    .gallery-card {
+        width: calc(50% - 20px);
+    }
+}
+
+
+@media only screen and (max-width: 743px) {
+
+    .custom-container {
+        width: 100%;
+        margin: 0 auto;
+        background-color: black;
+        padding: 0px;
+    }
+
+    .custom-card {
+        margin: 10px;
+        width: calc(100% - 20px);
+        border-width: 2px !important;
+        border-color: gold !important;
+        border-radius: 0% !important;
+    }
+
+    .card-header.gold {
+        background-color: gold;
+        font-weight: bold;
+        color: black;
+        border-radius: 0%;
+    }
+
+    .card-body.gold {
+        color: gold;
+        background-color: black;
+        border-radius: 0%;
+    }
+
+    .custom-bullet {
+        list-style: none;
+        padding-left: 0;
+        color: #f0f0f0;
+    }
+
+    .contact-section {
+        margin-top: 50px;
+        color: white;
+    }
+
+    .custom-row {
+        width: calc(100% - 5px) !important;
+        border-width: 2px !important;
+        border-color: gold !important;
+        border-radius: 0% !important;
+    }
+
+    .contact-info {
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+    }
+
+    .contact-info-column.border {
+        border-color: gold !important;
+        border-width: 3px !important;
+    }
+
+    .contact-info-column:hover {
+        background-color: gold;
+        color: black;
+    }
+
+    .content.main {
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
+        margin-top: 10vh;
+    }
+
+    div.logo {
+        height: 50vh;
+        padding: 0px;
+        max-width: 100vw;
+        margin: 0px;
+        margin-top: -20vh;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo img {
+        max-height: 300px;
+        max-width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text {
+        margin-top: -10vh;
+    }
+
+    .containerLocation {
+        height: 1000px;
+    }
+
+    .box {
+        flex: 1;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .containerLocation {
+        flex-direction: column;
+    }
+
+    .containerLocationList {
+        width: 95%;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .box img {
+        width: 90%;
+        height: auto;
+    }
+
+    
+
+    .gallery-card {
+        width: calc(100% - 20px);
+    }
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: gold;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbarcolor {
+    background-color: black;
+    border-bottom: 2px solid #007bff;
+}
+
+.navbar-nav li.nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav li.nav-item a.nav-link {
+    color: gold;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #ffffff;
+}
+
+
+.phone-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.phone-button i {
+    margin-right: 5px;
+}
+
+.rounded-pill {
+    color: black !important;
+    background-color: gold !important;
+    border-color: black !important;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.rounded-pill {
+    animation: pulse 1s infinite;
+}
+
+.slogan {
+    margin-top: -10vh;
+    color: rgb(242 226 161);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.box image div {
+    display: none !important;
+}
+
+.map-header {
+    display: none !important;
+}
+
+.custom-row a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.custom-row a:hover {
+    color: black !important;
+}
+
+ul.thunder-list{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-custom {
+    background-color: black;
+  }
+
+  span.navbar-toggler-icon{
+    background-color: gold !important;
+  }
+
+  ul h2 li{
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .custom-bullet li::before {
+    content: "\1F37D"; /* 🍽 */
+    font-size: 1.2em;
+    margin-right: 0.1em;
+    color: #FFD700;
+}
+
+.custom-bullet.event li::before {
+    content: "\1F389"; /* 🎉 */
+}
+
+.custom-bullet.sidro li::before {
+    content: "\2693"; /* ⚓ */
+}
