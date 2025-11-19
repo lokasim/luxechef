@@ -383,6 +383,24 @@ div.logo {
         margin-right: auto;
     }
 
+    .containerLocationList {
+        width: 95%;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .box img {
+        width: 90%;
+        height: auto;
+    }
+
     .gallery-card {
         width: calc(50% - 20px);
     }
@@ -499,15 +517,29 @@ div.logo {
         margin: 20px;
     }
 
-    iframe {
-        width: 100% !important;
-        height: 100% !important;
-        border: none;
-    }
-
     .containerLocation {
         flex-direction: column;
     }
+
+    .containerLocationList {
+        width: 95%;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .box img {
+        width: 90%;
+        height: auto;
+    }
+
+    
 
     .gallery-card {
         width: calc(100% - 20px);
